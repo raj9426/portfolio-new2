@@ -1,0 +1,591 @@
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Nunito&family=Nunito+Sans&family=Poppins:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+} */
+.header{
+    width: 100%;
+    height: 50px;
+    color: rgb(56, 61, 65);
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    z-index:  1;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.587);
+    backdrop-filter: blur(5px);
+
+}
+
+ 
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Nunito';
+    padding: 10px;
+    height: 100%;
+    
+    width: 90%;
+}
+ul li div{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.nav-sidebarToggle{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: 600;
+    gap: 4rem;
+}
+a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.73);
+}
+.logo a{
+    color: rgb(9, 9, 9);
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.info{
+    padding-top: 60px;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about{
+    width:50%;
+}
+.about p{
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight:550;
+    font-size: 1.2rem;
+}
+.about h1{
+    font-family: 'Nunito';
+    color: rgba(0, 0, 0, 0.592);
+}
+.about span{
+    color: rgb(255, 113, 113);
+    font-weight: 700;
+    
+}
+.about span:hover{
+    display: inline-block;
+    transition: transform 0.9s ease-in-out;
+    transform: rotate(360deg);
+    cursor: pointer;
+}
+.img-con{
+    margin:-70px 20px 0px 0px;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 80%;
+    overflow: hidden;
+    background:radial-gradient(rgb(210, 137, 137), rgb(249, 105, 105));
+    transform: rotate(5deg);
+    transition: 0.5s;
+    box-shadow: 2px 3px 100px rgba(129, 122, 122, 0.700);
+}
+img{
+    width: 100%;
+    margin-top: -50px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+img:hover{
+    transform: scale(1.05);
+    transition:0.5s;
+}
+.button{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 82, 82);
+    width: 160px;
+    border: none;
+    border-radius: 13px;
+    padding: 13px 0px;
+}
+.button a{
+    color: #F8EEEF;
+    font-weight: 700;
+    font-size: 15px;
+    font-family: 'Nunito Sans';
+}
+.button:hover{
+    background-color: rgb(252, 93, 93);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.skills-con{
+    width: 100%;
+    height: 20rem;
+    padding: 64px;
+    display: flex;
+    background-color: rgba(252, 202, 202, 0.76);
+    gap: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.skills{
+    width: 100%;
+    height: 15rem;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.skills img{
+    width: 5rem;
+    height: 6.25rem;
+}
+.skills img:hover{
+    transform: rotate(30deg);
+    transition:0.5s;
+}
+.skills-info p{
+    font-family: 'Nunito';
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+.skills-info #pro{
+    font-family: 'Nunito sans';
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+.skills-info #skl{
+    margin-top: 20px;
+    background-color: rgb(248, 204, 204);
+    border-radius: 10px;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    font-family: 'Nunito sans';
+    border: 1px solid;
+    font-weight: 600;
+    color: rgb(249, 13, 13);
+    padding-top: 2px;
+}
+.work-con{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.works{
+    width: 90%;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+}
+.works h2{
+    font-family: 'Nunito';
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: rgba(0, 0, 0, 0.628);
+}
+.work{
+    /* margin-top: 100px; */
+    /* margin-left: 10px; */
+    width: 100%;
+    /* display: flex;
+    gap: 50px; */
+    /* background-color: blue; */
+    /* height: 28rem; */
+}
+
+.work img{
+    margin-top: 0px;
+    float: left;
+    width: 20rem;
+}
+.about-work{
+    margin-left: 350px;
+    font-family: 'Nunito sans';
+    font-size: 20px;
+    
+}
+.about-work span{
+    border-radius: 40px;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid;
+    background-color: rgb(248, 204, 204);
+    color: rgb(249, 13, 13);
+    
+}
+.about-work a{
+    display: inline-block;
+    margin-left: 20px;
+    font-weight: 600;
+    transition: 1s;
+    
+}
+.about-work a::before{
+    content: " ";
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: rgb(249, 13, 13);
+    transition: 0.5s;
+}
+.about-work a:hover::before{
+    width: 140px;
+    height: 3px;
+    transition: 0.5s;
+}
+.footer{
+    width: 100%;
+    height: 15rem;
+    margin-top: 100px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social{
+    font-size: 32px;
+    letter-spacing: 10px;
+}
+.fa-brands{
+    transition: 0.5s;
+    text-align: center;
+    margin-top: 30px;
+}
+.fa-brands:hover{
+    color: rgba(0, 0, 0, 0.619);
+    transition: 0.5s;
+}
+.fa-linkedin:hover{
+    color: #0077B5;
+}
+.fa-facebook-square:hover{
+    color: #3b5998;
+}
+.fa-github:hover{
+    color: #32865c;
+}
+.fa-instagram:hover{
+    color: #e1306c;
+}
+.fa-twitter:hover{
+    color: #00acee;
+}
+.social h5{
+    letter-spacing: 5px;
+    text-align: center;
+}
+.social p{
+    color: rgb(63, 53, 53);
+    letter-spacing: 2px;
+    font-family: 'Nunito sans';
+    font-size: 15px;
+    text-align: center;
+}
+.fa-bars{
+    display: none !important;
+}
+/* @media only screen 
+  and (min-device-height: 400px) 
+  and (min-device-height: 768px) {
+    .img-con{
+        width: 7rem;
+        height: 7rem;
+    }
+
+} */
+@media screen and (max-width: 921px){
+    .img-con{
+        width: 15rem;
+        height: 15rem;
+        
+    }
+    .about-work a::before{
+        width: 30px;
+    }
+    .about-work a:hover::before{
+        width: 110px;
+    }
+    .img-con img{
+        margin-top: -30px;
+
+    }
+    .about{
+        width:25rem;
+    }
+    .about p{
+        font-size: 1rem;
+    }
+    .skills-info p{
+        font-size: 1rem;
+    }
+    .skills-info #pro{
+        font-size: 1.3rem;
+    }
+    .skills{
+        width: 100%;
+        height: 10rem;
+        margin-top: 40px;        
+    }
+    .skills img{
+        width: 3rem;
+    }
+    .about-work{
+        margin-left: 300px;
+        font-family: 'Nunito sans';
+        font-size: 15px;
+        
+    }
+    .works h2{
+        font-size: 1.3rem;
+    }
+    .work img{
+        width: 15rem;
+    }
+    .social{
+        font-size: 26px;
+        letter-spacing: 10px;
+    }
+   
+}   
+
+@media only screen 
+  and (min-device-height: 884px) 
+  and (max-device-height: 1180px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .container{
+        height: 60vh;
+        
+    }
+    .img-con{
+        width: 15rem;
+        height: 15rem;
+        
+    }
+
+}
+@media only screen 
+  and (min-device-height: 912px) 
+  and (max-device-height: 1368px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .container{
+        height: 40vh;
+        
+    }
+
+}
+@media only screen 
+  and (min-device-height: 412px) 
+  and (max-device-height: 920px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .container{
+        height: 80vh;
+        
+    }
+
+}
+
+@media screen and (max-height:500px) {
+    .container{
+        height: 100vh;
+        
+    }
+    
+}
+@media (max-width:768px){
+    .about-work span{
+        border-radius: 40px;
+        padding: 0 6px;
+        font-size: 13px;
+        font-weight: 600;
+        border: 1px solid;
+        background-color: rgb(248, 204, 204);
+        color: rgb(249, 13, 13);
+        
+    }
+    .fa-bars{
+        position: relative;
+    }
+    .nav-sidebarToggle{
+        border-radius: 0 0 0 20px;
+        top: 0px;
+        width: 15rem;
+        right: 0;
+        height: 350px;
+        gap: 10px;
+        justify-content: center;
+        flex-direction: column;
+        transform: translateX(15rem);
+        position:fixed;
+        backdrop-filter: blur(3px);
+        transition: transform 0.5s;
+        background: rgba(237, 61, 61, 0.346);
+        
+    }
+    .nav-active{
+        transform: translateX(0);
+    }
+
+    .fa-solid{
+        display:block !important;
+        position: relative;
+        font-size: 30px;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        flex-flow: column-reverse;
+    }
+    .img-con{
+        margin-top: 0px;
+        width: 10rem;
+        height: 10rem;
+    }
+    .about{
+        margin-top: 20px;
+        width: 90%;
+        text-align: center;
+        
+    }
+    .about p{
+        font-size: 0.9rem;
+    }
+    .about h1{
+        font-size: 1.6rem;
+    }
+    .button{
+        width:130px;
+        padding: 10px 0;
+    }
+    .button-car{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    .skills-info #pro{
+        font-size: 1.4rem;
+    }
+    .skills-con{
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        
+
+    }
+    .skills{
+        height: 7rem;
+        margin: 0%;
+        grid-template-columns: repeat(5, 1fr);
+        width: 70%;
+    }
+    .skills img{
+        width: 3rem;
+    }
+    #skl{
+        display: none;
+    }
+    
+} 
+@media screen and (max-width:650px){
+    .work{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;    
+    }
+    .about-work{
+        margin-left: 0px;       
+    }
+}
+@media screen and (max-width:601px){
+    .about{
+        margin-top: 10px;
+    }
+    .main h1{
+        font-size: 20px;
+
+    }
+    .main p{
+        font-size: 0.8rem;
+    }
+    .skills-info{
+        width: 300px;
+    }
+}
+@media screen and (max-width:383px) {
+    .img-con{
+        width: 8rem;
+        height: 8rem;
+    }
+    .img-con img{
+        margin-top: -10px;
+    }
+    .main h1{
+        font-size: 18.2px;
+    }
+    .main p{
+        font-size: 0.7rem;
+    }
+    .logo a{
+        font-size: 1.3rem;
+    }
+    .skills-info{
+        width: 250px;
+    }
+}
+@media screen and (max-width:560px) {
+    .work img{
+        width: 12rem;
+    }
+    
+}
+
+@media (max-height:400px) {
+    
+    .container{
+        height: 450px;
+    }
+    .img-con img{
+        margin-top: -10px;
+    }
+    .button{
+        width:120px;
+        padding: 10px 0;
+        margin-bottom: 40px;
+    }
+    .button a{
+        font-size: 11px;
+    }
+    
+}
